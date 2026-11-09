@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Expense Tracker",
+    "slug": "expense-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mydbops.expensetracker"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.mydbops.expensetracker",
+      "permissions": [
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ],
+      "backgroundColor": "#0a0c11"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "expensetracker",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#2563eb",
+          "defaultChannel": "reminders",
+          "enableRemoteNotifications": false
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-navigation-bar",
+        {
+          "enforceContrast": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
